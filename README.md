@@ -1,1 +1,1 @@
-# PseudoCL-MedSeg
+# PatchCL-MedSeg
