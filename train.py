@@ -4,17 +4,17 @@ import segmentation_models_pytorch as smp
 import math
 import time
 from torch.utils.data import DataLoader
-from stochastic_approx import StochasticApprox
-from model import Network
-from datasets import LabData,UnlabData
-from queues import Embedding_Queues
-from CELOSS import CE_loss
-from patch_utils import _get_patches
-from aug_utils import batch_augment
-from get_embds import get_embeddings
-from const_reg import consistency_cost
-from plg_loss import PCGJCL
-from torch_poly_lr_decay import PolynomialLRDecay
+from utils.stochastic_approx import StochasticApprox
+from utils.model import Network
+from utils.datasets import LabData,UnlabData
+from utils.queues import Embedding_Queues
+from utils.CELOSS import CE_loss
+from utils.patch_utils import _get_patches
+from utils.aug_utils import batch_augment
+from utils.get_embds import get_embeddings
+from utils.const_reg import consistency_cost
+from utils.plg_loss import PCGJCL
+from utils.torch_poly_lr_decay import PolynomialLRDecay
 
 
 
